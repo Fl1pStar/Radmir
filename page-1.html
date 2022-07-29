@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicoт-1.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Radmir</title>
+  <link rel="preload" href="fonts/JostRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JostSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JostBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container-fluid header__container">
+    <a href="#" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="Логотип RoboSchool">
+    </a>
+    <nav class="nav" title="Главное меню" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О школе</a></li>
+        <li class="nav__item"><a href="#trainers" class="nav__link" data-menu-item data-scroll>Тренеры</a></li>
+        <li class="nav__item"><a href="#tariffs" class="nav__link" data-menu-item data-scroll>Стоимость</a></li>
+        <li class="nav__item">
+          <a class="nav__link" target="_blank" href="https://www.youtube.com/channel/UCCSbQaLe9eglMwhoMG6wksQ">
+          <img class="item__icon img" src="img/youtube.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" target="_blank" href="https://vk.com/flip_star_mods">
+            <img class="item__icon img" src="img/vk.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" target="_blank" href="https://vm.tiktok.com/ZSeBpSu6D/">
+            <img class="item__icon img" src="img/twich.svg" alt="TikTok">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" target="_blank" href="https://t.me/flip_star">
+            <img class="item__icon img" src="img/tg.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" target="_blank" href="Нету">
+            <img class="item__icon img" src="img/inst.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+      </ul>
+      <button  if($(window).width()<800) {...} class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
+    </nav>
+    <a href="tel:+78000001122" class="phone header__phone"></a>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Сборки для Radmir RP
+        <span class="hero__title-text">
+          Улучшай свою игру и делай ее комфортной
+        </span>
+      </h1>
+      <a href="#tariffs" class="hero__link btn btn-reset" data-scroll>Записаться на курс</a>
+    </div>
+    <div class="hero__image">
+      <picture>
+        <source srcset="img/hero-image.avif" type="image/avif">
+        <source srcset="img/hero-image.webp" type="image/webp">
+        <img loading="lazy" src="img/hero-image.png" class="image" width="783" height="917" alt="Девушка, смотрящая вдаль">
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="tariffs section-offset" id="tariffs">
+  <div class="container">
+    <h2 class="section-title tariffs__title">Выберите нужный пакет сборки</h2>
+    <ul class="list-reset tariffs__list">
+      <li class="tariffs__item tariffs__item--current">
+        <h3 class="tariffs__subtitle">Full version MiyaGi</h3>
+        <div class="tariffs__price">1.000 ₽</div>
+        <p class="tariffs__descr">
+          Тут есть все
+        </p>
+        <button class="btn-reset btn tariffs__btn" data-graph-path="trainer-1" >Подробнее</button>
+      </li>
+      <li class="tariffs__item">
+        <h3 class="tariffs__subtitle">Incomplete version MiyaGi</h3>
+        <div class="tariffs__price">500 ₽</div>
+        <p class="tariffs__descr">
+          Внешка, плагины, адаптив под слабые пк
+        </p>
+        <button class="btn-reset btn tariffs__btn" data-graph-path="trainer-2" >Подробнее</button>
+      </li>
+      <li class="tariffs__item">
+        <h3 class="tariffs__subtitle">Easy version MiyaGi</h3>
+        <div class="tariffs__price">0 ₽</div>
+        <p class="tariffs__descr">
+          Только худ и радар
+        </p>
+        <button class="btn-reset btn tariffs__btn" data-graph-path="trainer-2" >Подробнее</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container-fluid footer__container">
+    <div class="footer__left">
+      <a href="#" class="logo footer__logo">
+        <img loading="lazy" src="img/logo.png" class="image" width="228" height="48" alt="Логотип RoboSchool">
+      </a>
+      <div class="footer__copy">© FlipStar</div>
+    </div>
+
+  </div>
+</footer>
+
+    <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-1">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <source srcset="img/popup-1.avif" type="image/avif">
+            <source srcset="img/popup-1.webp" type="image/webp">
+            <img loading="lazy" src="img/popup-1.jpg" class="image" width="160" height="222" alt="Марина Орлова">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">MiyaGi</div>
+          <div class="popup__post">Сбора Full version</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Описание</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Команды</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Плагины</button></li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__descr">
+                  <p class="popup__text">Сборка выполнена......</p>
+                  <p class="popup__text">......</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__descr">
+                  <p class="popup__text">/bt /sw </p>
+                  <p class="popup__text">/dd</p>
+                  <p class="popup__text">/mt</p>
+                  <p class="popup__text"></p>
+                  <p class="popup__text"></p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__subtitle">…</h3>
+                  <p class="popup__text">…</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__descr">
+                  <p class="popup__text">fff</p>
+                  <p class="popup__text">fff</p>
+                  <p class="popup__text">fff</p>
+                  <p class="popup__text">fff</p>
+                  <p class="popup__text">fff</p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__subtitle">…</h3>
+                  <p class="popup__text">…</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__subtitle">…</h3>
+                  <p class="popup__text">…</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                </div>
+                <div class="popup__content">
+                  <h3 class="popup__subtitle">…</h3>
+                  <p class="popup__text">…</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                  <p class="popup__text">.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
